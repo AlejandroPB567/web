@@ -1,0 +1,28 @@
+/* Establece que el body ocupe toda la altura de la ventana */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mínimo 100% del viewport */
+}
+
+/* El contenido debe expandirse para ocupar el espacio restante */
+.container-fluid {
+    flex-grow: 1;
+}
+
+/* Asegura que el footer esté siempre en la parte inferior */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Este estilo asegura que el footer se "pegue" al fondo */
+#footer-container {
+    margin-top: auto;
+}
+
